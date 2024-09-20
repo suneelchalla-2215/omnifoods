@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #website {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background-color: #fdf2e9;
+
+            /* border: 2px black solid;*/
+            #nav_bar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px black solid;*/
+                gap: 600px;
+                padding: 15px;
+                width: 100%;
+
+                #bar1 {
+                    width: 150px;
+                    height: 30px;
+                    /*border: 2px black solid;*/
+                }
+
+                #sub_bar {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    /* border: 2px black solid;*/
+                    gap: 60px;
+                    padding: 10px;
+                    width: 800px;
+                    font-size: 20px;
+                    color: rgb(0, 0, 0) solid;
+
+                    #bar2 {
+                        /* border: 2px black solid;*/
+                    }
+
+                    #bar3 {
+                        /* border: 2px black solid;*/
+                    }
+
+                    #bar4 {
+                        /*border: 2px black solid;*/
+                    }
+
+                    #bar5 {
+                        /* border: 2px black solid;*/
+                    }
+
+                    #click {
+                        font-size: 27px;
+                        background-color: darkorange;
+                        border: none;
+                        border-radius: 10px;
+                        width: 0px 18px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            #main_bar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: start;
+                /*border: 2px black solid;*/
+                gap: 100px;
+                padding: 30px;
+
+                #bar1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    /* border: 2px black solid;*/
+                    gap: 25px;
+                    padding: 10px;
+
+                    #box1 {
+                        /* border: 2px black solid;*/
+                        font-size: 55px;
+                        width: 550px;
+                        font-weight: bold;
+                    }
+
+                    #box2 {
+                        /*border: 2px black solid;*/
+                        font-size: 20px;
+                        width: 480px;
+                        color: rgba(128, 128, 128, 0.884);
+                        font-style: italic;
+                    }
+
+                    #box3 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        /* border: 2px black solid;*/
+                        gap: 30px;
+
+                        #start {
+                            /* border: 2px black solid;*/
+                            font-size: 25px;
+                            color: white;
+                            background-color: darkorange;
+                            border-radius: 10px;
+                            border: none;
+                            cursor: pointer;
+                        }
+
+                        #learn {
+                            /*border: 2px black solid;*/
+                            font-size: 25px;
+                            border-radius: 10px;
+                            border: none;
+                            background-color: white;
+                            cursor: pointer;
+                        }
+                    }
+
+                    #box4 {
+                        /*border: 2px black solid;*/
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+                        gap: 15px;
+
+                        #icon_box {
+                            /* border: 2px black solid;*/
+                            padding: 10px;
+
+                            #icon {
+                                border: 2px white solid;
+                                border-radius: 50%;
+                                margin-left: -20px;
+                                width: 40px;
+                            }
+                        }
+
+                        #para {
+                            /*border: 2px black solid;*/
+                            width: 290px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                #bar2 {
+                    /*border: 2px black solid;*/
+
+                    #omni {
+                        /* border: 2px black solid;*/
+                        width: 600px;
+                    }
+                }
+            }
+
+            #home_bar {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px black solid;*/
+                padding: 15px;
+                width: 100%;
+                background-color: white;
+                gap: 90px;
+
+                #bar1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    /* border: 2px black solid;*/
+                    gap: 20px;
+                    padding: 10px;
+                    width: 100%;
+
+                    #door1 {
+                        /*border: 2px black solid;*/
+                        font-size: 20px;
+                    }
+
+                    #door2 {
+                        /* border: 2px black solid;*/
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 15px;
+                        width: 1500px;
+                        gap: 50px;
+
+                        #text1 {
+                            /* border: 2px black solid;*/
+                            width: 200px;
+                        }
+
+                        #text2 {
+                            /*border: 2px black solid;*/
+                            width: 100px;
+                        }
+
+                        #text3 {
+                            /* border: 2px black solid;*/
+                            width: 200px;
+                        }
+
+                        #text4 {
+                            /*border: 2px black solid;*/
+                            width: 100px;
+                        }
+
+                        #text5 {
+                            /* border: 2px black solid;*/
+                            width: 180px;
+                        }
+                    }
+                }
+
+                #bar2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    /* border: 2px black solid;*/
+                    gap: 20px;
+                    padding: 10px;
+
+                    #door3 {
+                        /*border: 2px black solid;*/
+                        color: darkorange;
+                        font-size: 20px;
+                    }
+
+                    #door4 {
+                        /* border: 2px black solid;*/
+                        font-size: 45px;
+                        margin-right: 250px;
+                        font-weight: bold;
+                    }
+                }
+
+                #bar3 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: start;
+                    /* border: 2px black solid;*/
+                    padding: 10px 80px;
+                    gap: 100px;
+
+                    #door {
+                        /* border: 2px black solid;*/
+                        padding: 10px;
+
+                        #door1 {
+                            /*border: 2px black solid;*/
+                            font-size: 100px;
+                            color: gray;
+                        }
+
+                        #door2 {
+                            /* border: 2px black solid;*/
+                            font-size: 32px;
+                            font-weight: bold;
+
+                        }
+
+                        #door3 {
+                            /* border: 2px black solid;*/
+                            width: 530px;
+                            padding: 40px 0px;
+                            font-size: 20px;
+                        }
+                    }
+
+                    #sub_door {
+                        /* border: 2px black solid;*/
+                        height: 330px;
+                        width: 350px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background: radial-gradient(#cc9a72 50%, #fdf2e9 50%);
+
+                        #door4 {
+                            height: 400px;
+                        }
+                    }
+                }
+
+                #bar4 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: start;
+                    /*border: 2px black solid;*/
+                    gap: 160px;
+                    padding: 15px;
+
+                    #door {
+                        height: 330px;
+                        width: 350px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background: radial-gradient(#cc9a72 50%, #fdf2e9 50%);
+
+                        /*border: 2px black solid;*/
+                        #door1 {
+                            height: 400px;
+                        }
+                    }
+
+                    #sub_door {
+
+                        /* border: 2px black solid;*/
+                        #door2 {
+                            font-size: 100px;
+                            color: gray;
+                        }
+
+                        #door3 {
+                            font-size: 32px;
+                            font-weight: bold;
+                        }
+
+                        #door4 {
+                            width: 530px;
+                            padding: 40px 0px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                #bar5 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    /* border: 2px black solid; */
+                    padding: 10px 80px;
+                    gap: 80px;
+
+                    #door {
+                        /* border: 2px black solid; */
+                        padding: 10px;
+
+                        #door1 {
+                            /* border: 2px black solid;*/
+                            font-size: 100px;
+                            color: gray;
+                        }
+
+                        #door2 {
+                            /*border: 2px black solid;*/
+                            font-size: 32px;
+                            font-weight: bold;
+
+                        }
+
+                        #door3 {
+                            /*border: 2px black solid;*/
+                            width: 530px;
+                            font-size: 20px;
+                            padding: 40px 0px;
+                        }
+                    }
+
+                    #sub_door {
+                        /* border: 2px black solid;*/
+                        height: 330px;
+                        width: 350px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background: radial-gradient(#cc9a72 50%, #fdf2e9 50%);
+                    }
+
+                    #door4 {
+                        height: 400px;
+                    }
+                }
+
+                #bar6 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    #door1 {
+                        font-size: 20px;
+                        color: orange;
+                        font-weight: bold;
+                        font-family: 'Courier New', Courier, monospace;
+                    }
+
+                    #door2 {
+                        font-size: 40px;
+                        font-weight: bolder;
+                    }
+                }
+
+                #bar7 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 90px;
+                    padding: 60px;
+                    background-color: white;
+
+                    #main_bar1 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgb(255, 255, 255);
+                        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+                        border-radius: 20px;
+                        gap: 20px;
+
+                        #barA {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 30px;
+
+                            #pic3 {
+                                width: 330px;
+                                border-radius: 20px;
+                            }
+                        }
+
+                        #barZ {
+                            font-size: 10px;
+                            color: black;
+                            font-weight: bold;
+                            padding: 5px;
+                            background-color: lightyellow;
+                            border-radius: 20px;
+                            margin-left: -200px;
+                        }
+
+                        #barB {
+                            font-size: 10px;
+                            color: black;
+                            font-weight: bold;
+                            padding: 5px;
+                            background-color: lightgreen;
+                            border-radius: 20px;
+                            margin-left: -200px;
+                        }
+
+                        #barc {
+                            font-size: 30px;
+                            color: black;
+                            font-weight: bold;
+                            font-style: italic;
+                        }
+
+                        #bard {
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-style: italic;
+                            padding-bottom: 20px;
+                            margin-left: -90px;
+                        }
+
+                        #bare {
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-style: italic;
+                            padding-bottom: 20px;
+                            margin-left: -50px;
+                        }
+
+                        #barf {
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-style: italic;
+                            padding-bottom: 20px;
+                            margin-left: -70px;
+                        }
+                    }
+
+                    #main_bar2 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 20px;
+                        gap: 20px;
+                        padding: 40px;
+                        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+
+                        #w {
+                            font-size: 30px;
+                            color: black;
+                            font-weight: bold;
+                            font-style: italic;
+                        }
+
+                        #w1 {
+                            font-size: 20px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -50px;
+                        }
+
+                        #w2 {
+                            font-size: 20px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -90px;
+                        }
+
+                        #w3 {
+                            font-size: 20px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -45px;
+                        }
+
+                        #w4 {
+                            font-size: 20px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -45px;
+                        }
+
+                        #w5 {
+                            font-size: 20px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -38px;
+                        }
+
+                        #w6 {
+                            font-size: 20px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -99px;
+                        }
+
+                        #w7 {
+                            font-size: 20px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -90px;
+                        }
+
+                        #w8 {
+                            font-size: 20px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -27px;
+                        }
+
+                        #w9 {
+                            font-size: 20px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -40px;
+                        }
+                    }
+                }
+
+                #bar8 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 100px;
+                    padding: 40px;
+                    background-color: rgba(255, 235, 205, 0.384);
+
+                    #main_door1 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        #test {
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin-left: -350px;
+                            padding: 20px;
+                        }
+
+                        #once {
+                            font-size: 50px;
+                            width: 600px;
+                            margin-right: -100px;
+                            font-style: italic;
+                        }
+
+                        #bio {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 90px;
+                            margin-left: 80px;
+
+                            #bio1 {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 20px;
+                                padding: 30px;
+
+                                #pic4 {
+                                    width: 70px;
+                                    border-radius: 50%;
+                                    margin-left: -150px;
+                                }
+
+                                #para {
+                                    font-size: 20px;
+                                    color: gray;
+                                    font-weight: bold;
+                                    font-style: italic;
+                                    width: 230px;
+                                }
+
+                                #dave {
+                                    font-size: 15px;
+                                    color: black;
+                                    font-weight: bold;
+                                    margin-left: -80px;
+                                }
+                            }
+                        }
+                    }
+
+                    #main_door2 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        width: 100%;
+                        padding: 30px;
+
+                        #item {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            margin-left: -100px;
+
+                            #M {
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+
+                #bar9 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+
+                    #door1 {
+                        font-size: 20px;
+                        color: orange;
+                    }
+
+                    #door2 {
+                        font-size: 45px;
+                        font-weight: bold;
+                    }
+                }
+
+                #bar10 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 30px;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                    gap: 50px;
+                    background-color: white;
+
+                    #door1 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 50px;
+                        width: 300px;
+                        padding-top: 90px;
+                        gap: 20px;
+                        border: 2px rgba(255, 235, 205, 0.748) solid;
+                        background-color: white;
+                        border-radius: 10px;
+
+                        #star {
+                            font-size: 18px;
+                            font-weight: bold;
+                            gap: 100px;
+                        }
+
+                        #dollar {
+                            font-size: 60px;
+                            color: black;
+                            font-weight: bold;
+                        }
+
+                        #month {
+                            font-size: 15px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                        }
+
+                        #meal {
+                            font-size: 19px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -80px;
+                        }
+
+                        #order {
+                            font-size: 19px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -10px;
+                        }
+
+                        #delivery {
+                            font-size: 19px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -80px;
+                            gap: 30px;
+                        }
+
+                        #acess {
+                            font-size: 19px;
+                            color: gray;
+                            font-weight: bold;
+                            font-style: italic;
+                            margin-left: -5px;
+                            gap: 30px;
+                        }
+
+                        #well {
+                            background-color: orange;
+                            border: none;
+                            cursor: pointer;
+                            font-size: 20px;
+                            color: white;
+                            padding: 13px 30px;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    #door2 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: start;
+                        width: 300px;
+                        padding: 50px;
+                        gap: 20px;
+                        border: 2px rgba(255, 235, 205, 0.748) solid;
+                        background-color: rgba(255, 235, 205, 0.384);
+                        border-radius: 10px;
+                        overflow: hidden;
+
+                        #rotate {
+                            font-size: 15px;
+                            color: black;
+                            font-weight: bold;
+                            padding: 10px 50px;
+                            background-color: yellowgreen;
+                            rotate: 50deg;
+                            margin-left: 200px;
+                            width: 150px;
+                        }
+
+                        #star1 {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+
+                        #dollar1 {
+                            font-size: 60px;
+                            color: black;
+                            font-weight: bold;
+
+                        }
+
+                        #month1 {
+                            font-size: 15px;
+                            color: gray;
+                            font-weight: bold;
+                        }
+
+                        #meal1 {
+                            font-size: 19px;
+                            color: gray;
+                            font-weight: bold;
+                        }
+
+                        #order1 {
+                            font-size: 19px;
+                            color: gray;
+                            font-weight: bold;
+                        }
+
+                        #delivery1 {
+                            font-size: 19px;
+                            color: gray;
+                            font-weight: bold;
+                            gap: 30px;
+                        }
+
+                        #acess1 {
+                            font-size: 19px;
+                            color: gray;
+                            font-weight: bold;
+                            gap: 30px;
+                        }
+
+                        #well1 {
+                            background-color: orange;
+                            border: none;
+                            cursor: pointer;
+                            font-size: 20px;
+                            color: white;
+                            padding: 13px 30px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+
+                #bar11 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 80px;
+                    padding: 0px 10px;
+
+                    #door1 {
+                        font-size: 15px;
+                    }
+
+                    #door2 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 80px;
+
+                        #window1 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: start;
+                            gap: 20px;
+
+                            #in {
+                                width: 50px;
+                                color: orange;
+                                border: 2px orange solid;
+                                border-radius: 50%;
+                                background-color: rgb(214, 187, 136);
+                            }
+
+                            #never {
+                                font-size: 25px;
+                                font-weight: bold;
+                            }
+
+                            #para {
+                                width: 200px;
+                            }
+                        }
+
+                        #window2 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: start;
+                            gap: 20px;
+
+                            #in {
+                                width: 70px;
+                                color: orange;
+                                border: 2px rgb(214, 187, 136) solid;
+                                border-radius: 50%;
+                                background-color: rgb(214, 187, 136);
+                            }
+
+                            #local {
+                                font-size: 25px;
+                                font-weight: bold;
+                            }
+
+                            #para {
+                                width: 200px;
+                            }
+                        }
+
+                        #window3 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: start;
+                            gap: 20px;
+
+                            #in {
+                                width: 50px;
+                                color: orange;
+                                border: 2px rgb(214, 187, 136) solid;
+                                border-radius: 50%;
+                                background-color: rgb(214, 187, 136);
+                            }
+
+                            #no {
+                                font-size: 25px;
+                                font-weight: bold;
+                            }
+
+                            #para {
+                                width: 200px;
+                            }
+                        }
+
+                        #window4 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: start;
+                            gap: 20px;
+
+                            #in {
+                                width: 50px;
+                                color: orange;
+                                border: 2px rgb(214, 187, 136)solid;
+                                border-radius: 50%;
+                                background-color: rgb(214, 187, 136);
+                            }
+
+                            #pause {
+                                font-size: 25px;
+                                font-weight: bold;
+                            }
+
+                            #para {
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+
+                #bar12 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80%;
+                    gap: 150px;
+                    background-color: rgba(255, 140, 0, 0.733);
+                    border-radius: 20px;
+
+                    #container2 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+
+                        #sub_cont {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+
+                            #get {
+                                font-size: 50px;
+                                color: black;
+                                font-weight: bold;
+                                font-style: italic;
+                                margin-right: -40px;
+                            }
+
+                            #health {
+                                font-size: 25px;
+                                color: gray;
+                                font-weight: bold;
+                                font-style: italic;
+                                width: 650px;
+                                margin-right: -100px;
+                            }
+                        }
+
+                        #sub_cont1 {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            margin-right: -90px;
+
+                            #name {
+                                background-color: white;
+                                border: none;
+                                cursor: pointer;
+                                font-size: 20px;
+                                color: white;
+                                padding: 13px 30px;
+                                border-radius: 10px;
+                            }
+
+                            #mail {
+                                background-color: white;
+                                border: none;
+                                cursor: pointer;
+                                font-size: 20px;
+                                color: white;
+                                padding: 13px 30px;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        #sub_cont2 {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            padding: 30px;
+                            margin-right: -80px;
+
+                            #page {
+                                background-color: white;
+                                border: none;
+                                cursor: pointer;
+                                font-size: 20px;
+                                color: gray;
+                                padding: 13px 30px;
+                                border-radius: 10px;
+                            }
+
+                            #now {
+                                background-color: rgba(112, 99, 99, 0.823);
+                                border: none;
+                                width: 300px;
+                                cursor: pointer;
+                                font-size: 20px;
+                                color: white;
+                                padding: 13px 30px;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+
+                    #pic9 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        #pic0 {
+                            width: 400px;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+
+                #bar13 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: start;
+                    padding-top: 300px;
+                    padding-bottom: 100px;
+                    gap: 90px;
+                    width: 100%;
+                    background-color: white;
+
+                    #home1 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: start;
+                        gap: 27px;
+
+                        #img {
+                            width: 180px;
+                        }
+
+                        #home2 {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 30px;
+
+                            #img1 {
+                                width: 20px;
+                            }
+                        }
+                    }
+
+                    #home3 {
+                        font-size: 18px;
+                        width: 200px;
+                        color: gray;
+                        font-weight: bold;
+                        
+                    }
+
+                    #homeA {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 20px;
+
+                        #contact {
+                            font-size: 25px;
+                            color: black;
+                            font-weight: bold;
+                           
+                        }
+
+                        #CA {
+                            font-size: 19px;
+                            width: 200px;
+                            color: gray;
+                            font-weight: bold;
+                            
+                        }
+
+                        #number {
+                            font-size: 19px;
+                            color: gray;
+                            font-weight: bold;
+                        }
+
+                        #hello {
+                            font-size: 19px;
+                            color: gray;
+                            font-weight: bold;
+                            
+                        }
+                    }
+
+                    #homeB {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 20px;
+
+                        #account {
+                            font-size: 25px;
+                            color: black;
+                            font-weight: bold;
+                            
+                        }
+
+                        #mas {
+                            font-size: 19px;
+                            color: gray;
+                            font-weight: bold;
+                            
+                        }
+                    }
+
+                }
+    </style>
+</head>
+
+<body>
+    <div id="website">
+        <div id="nav_bar">
+            <img id="bar1" src="https://omnifood.dev/img/omnifood-logo.png" alt="">
+            <div id="sub_bar">
+                <div id="bar2">How it works</div>
+                <div id="bar3">Meals</div>
+                <div id="bar4">Testimonials</div>
+                <div id="bar5">Pricing</div>
+                <button id="click" type="submit">Try for free</button>
+            </div>
+        </div>
+        <div id="main_bar">
+            <div id="bar1">
+                <div id="box1">A healthy meal delivered to your door, every single day</div>
+                <div id="box2">The smart 365-days-per-year food subscription that will make you eat healthy again.
+                    Tailored to your personal tastes and nutritional needs.</div>
+                <div id="box3">
+                    <button id="start" type="submit">Start eating well</button>
+                    <button id="learn" type="submit"> Learn more ↓</button>
+                </div>
+                <div id="box4">
+                    <div id="icon_box">
+                        <img id="icon" src="https://omnifood.dev/img/customers/customer-1.jpg" alt="">
+                        <img id="icon" src="https://omnifood.dev/img/customers/customer-2.jpg" alt="">
+                        <img id="icon" src="https://omnifood.dev/img/customers/customer-3.jpg" alt="">
+                        <img id="icon" src="https://omnifood.dev/img/customers/customer-4.jpg" alt="">
+                        <img id="icon" src="https://omnifood.dev/img/customers/customer-5.jpg" alt="">
+                        <img id="icon" src="https://omnifood.dev/img/customers/customer-6.jpg" alt="">
+                    </div>
+                    <div id="para"><span style="color: darkorange;">250,000+</span> meals delivered last year!</div>
+                </div>
+            </div>
+            <div id="bar2">
+                <img id="omni" src="https://omnifood.dev/img/hero.webp" alt="">
+            </div>
+        </div>
+        <div id="home_bar">
+            <div id="bar1">
+                <div id="door1">As featured in</div>
+                <div id="door2">
+                    <img id="text1" src="https://omnifood.dev/img/logos/techcrunch.png" alt="">
+                    <img id="text2" src="https://omnifood.dev/img/logos/business-insider.png" alt="">
+                    <img id="text3" src="https://omnifood.dev/img/logos/the-new-york-times.png" alt="">
+                    <img id="text4" src="https://omnifood.dev/img/logos/forbes.png" alt="">
+                    <img id="text5" src="https://omnifood.dev/img/logos/usa-today.png" alt="">
+                </div>
+            </div>
+            <div id="bar2">
+                <div id="door3">How it works</div>
+                <div id="door4">Your daily dose of health in 3 simple steps</div>
+            </div>
+            <div id="bar3">
+                <div id="door">
+                    <div id="door1">01</div>
+                    <div id="door2">Tell us what you like (and what not)</div>
+                    <div id="door3">Never again waste time thinking about what to eat! Omnifood AI will create a 100%
+                        personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins
+                        you need, no matter what diet you follow!</div>
+                </div>
+                <div id="sub_door">
+                    <img id="door4" src="https://omnifood.dev/img/app/app-screen-1.png" alt="">
+                </div>
+            </div>
+            <div id="bar4">
+                <div id="door">
+                    <img id="door1" src="https://omnifood.dev/img/app/app-screen-2.png" alt="">
+                </div>
+                <div id="sub_door">
+                    <div id="door2">02</div>
+                    <div id="door3">Approve your weekly meal plan</div>
+                    <div id="door4">Once per week, approve the meal plan generated for you by Omnifood AI. You can
+                        change ingredients, swap entire meals, or even add your own recipes.</div>
+                </div>
+            </div>
+            <div id="bar5">
+                <div id="door">
+                    <div id="door1">03</div>
+                    <div id="door2">Receive meals at convenient time</div>
+                    <div id="door3">Best chefs in town will cook your selected meal every day, and we will deliver it to
+                        your door whenever works best for you. You can change delivery schedule and address daily!</div>
+                </div>
+                <div id="sub_door">
+                    <img id="door4" src="https://omnifood.dev/img/app/app-screen-3.png" alt="">
+                </div>
+            </div>
+            <div id="bar6">
+                <div id="door1">Meals</div>
+                <div id="door2">
+                    <marquee align:right><i>Omnifood AI chooses from 5,000+ recipes</i></marquee>
+                </div>
+            </div>
+            <div id="bar7">
+                <div id="main_bar1">
+                    <div id="barA">
+                        <img id="pic3" src="https://omnifood.dev/img/meals/meal-1.jpg">
+                    </div>
+                    <div id="barB">VEGETARIAN</div>
+                    <div id="barc">Japanese Gyozas</div>
+                    <div id="bard"><span style="color: orange;">650</span>calories</div>
+                    <div id="bare">NutriScore ® <span style="color: orange;">74</span></div>
+                    <div id="barf"><span style="color: orange;">4.9</span> rating (537)</div>
+                </div>
+                <div id="main_bar1">
+                    <div id="barA">
+                        <img id="pic3" src="https://omnifood.dev/img/meals/meal-2.jpg">
+                    </div>
+                    <div id="barZ">VEGAN</div>
+                    <div id="barc">Avocado Salad</div>
+                    <div id="bard"><span style="color: orange;">400</span> calories</div>
+                    <div id="bare">NutriScore ® <span style="color: orange;">92</span></div>
+                    <div id="barf"><span style="color: orange;">4.8</span> rating (441)</div>
+                </div>
+                <div id="main_bar2">
+                    <div id="w">Works with any diet:</div>
+                    <div id="w1"><span style="color: orange;">✓</span> Vegetarian</div>
+                    <div id="w2"><span style="color: orange;">✓</span> Vegan</div>
+                    <div id="w3"><span style="color: orange;">✓</span> Pescatarian</div>
+                    <div id="w4"><span style="color: orange;">✓</span> Gluten-free</div>
+                    <div id="w5"><span style="color: orange;">✓</span> Lactose-free</div>
+                    <div id="w6"><span style="color: orange;">✓</span> Keto</div>
+                    <div id="w7"><span style="color: orange;">✓</span> Paleo</div>
+                    <div id="w8"><span style="color: orange;">✓</span> LOw fodmap</div>
+                    <div id="w9"><span style="color: orange;">✓</span> kid-friendly</div>
+                </div>
+            </div>
+            <div id="see"><span style="color: orange;">See all recipes →</span></div>
+
+            <div id="bar8">
+                <div id="main_door1">
+                    <div id="test"><span style="color: orange;">TESTIMONIALS</span></div>
+                    <div id="once">Once you try it, you can't go back</div>
+                    <div id="bio">
+                        <div id="bio1">
+                            <img id="pic4" src="https://omnifood.dev/img/customers/dave.jpg">
+                            <div id="para">Inexpensive, healthy and great-tasting meals, without even having to order
+                                manually! It feels truly magical.</div>
+                            <div id="dave">— Dave Bryson</div>
+                            <img id="pic4" src="https://omnifood.dev/img/customers/ben.jpg">
+                            <div id="para">The AI algorithm is crazy good, it chooses the right meals for me every time.
+                                It's amazing not to worry about food anymore!</div>
+                            <div id="dave">— Ben Hadley</div>
+                        </div>
+                        <div id="bio1">
+                            <img id="pic4" src="https://omnifood.dev/img/customers/steve.jpg">
+                            <div id="para">Omnifood is a life saver! I just started a company, so there's no time for
+                                cooking. I couldn't live without my daily meals now!</div>
+                            <div id="dave">— Steve Miller</div>
+                            <img id="pic4" src="https://omnifood.dev/img/customers/hannah.jpg">
+                            <div id="para">I got Omnifood for the whole family, and it frees up so much time! Plus,
+                                everything is organic and vegan and without plastic.</div>
+                            <div id="dave">— Hannah Smith</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main_door2">
+                    <div id="item">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-1.jpg">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-2.jpg">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-3.jpg">
+                    </div>
+                    <div id="item">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-4.jpg">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-5.jpg">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-6.jpg">
+                    </div>
+                    <div id="item">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-7.jpg">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-8.jpg">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-9.jpg">
+                    </div>
+                    <div id="item">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-10.jpg">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-11.jpg">
+                        <img id="M" src="https://omnifood.dev/img/gallery/gallery-12.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="bar9">
+                <div id="door1">Pricing</div>
+                <div id="door2">Eating well without breaking the bank</div>
+            </div>
+            <div id="bar10">
+                <div id="door1">
+                    <div id="star"><span style="color: orange;">STARTER</span></div>
+                    <div id="dollar"><span style="font-size: 25px;">$</span>399</div>
+                    <div id="month">per month. That's just $13 per meal!</div>
+                    <div id="meal"><span style="color: orange; letter-spacing: 10px;">✓ </span>1 meal per day</div>
+                    <div id="order"><span style="color: orange;letter-spacing: 20px;">✓</span>Order from 11am to 9pm
+                    </div>
+                    <div id="delivery"><span style="color: orange;letter-spacing: 20px;">✓</span>Delivery is free</div>
+                    <div id="acess"><span style="color: orange; letter-spacing: 20px; font-weight: bold;">✕</span>not
+                        acess to latest recipes</div>
+                    <button id="well" type="submit">Start eating well</button>
+                </div>
+                <div id="door2">
+                    <div id="rotate">BEST VALUE</div>
+                    <div id="star1"><span style="color: orange;">COMPLETE</span></div>
+                    <div id="dollar1"><span style="font-size: 25px;">$</span>649</div>
+                    <div id="month1">per month. That's just $11 per meal!</div>
+                    <div id="meal1"><span style="color: orange;letter-spacing: 10px;">✓ </span><span
+                            style="color: black;">2 meals </span> per day</div>
+                    <div id="order1"><span style="color: orange;letter-spacing: 20px;">✓</span>Order <span
+                            style="color: black;">24/7</span></div>
+                    <div id="delivery1"><span style="color: orange;letter-spacing: 20px;">✓</span>Delivery is free</div>
+                    <div id="acess1"><span style="color: orange; letter-spacing: 20px;">✓</span>Get access to latest
+                        recipes</div>
+                    <button id="well1" type="submit">Start eating well</button>
+                </div>
+            </div>
+            <div id="bar11">
+                <div id="door1">Prices include all applicable taxes. You can cancel at any time. Both plans include the
+                    following:</div>
+                <div id="door2">
+                    <div id="window1">
+                        <img id="in"
+                            src="https://cdn.vectorstock.com/i/500p/38/59/infinity-or-infinite-loop-line-icon-vector-22893859.avif"
+                            alt="">
+                        <div id="never">Never cook again!</div>
+                        <div id="para">Our subscriptions cover 365 days per year, even including major holidays.</div>
+                    </div>
+                    <div id="window2">
+                        <img id="in" src="https://endlessicons.com/wp-content/uploads/2012/11/apple-icon-614x460.png"
+                            alt="">
+                        <div id="local">Local and organic</div>
+                        <div id="para">Our cooks only use local, fresh, and organic products to prepare your meals.
+                        </div>
+                    </div>
+                    <div id="window3">
+                        <img id="in"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMFS84nsvMKKN8gUDHUuzt63L0w0GK4hPZqQ&s"
+                            alt="">
+                        <div id="no">No waste</div>
+                        <div id="para">All our partners only use reusable containers to package all your meals.</div>
+                    </div>
+                    <div id="window4">
+                        <img id="in" src="https://simpleicon.com/wp-content/uploads/pause.png" alt="">
+                        <div id="pause">Pause anytime</div>
+                        <div id="para">Going on vacation? Just pause your subscription, and we refund unused days.</div>
+                    </div>
+                </div>
+            </div>
+            <div id="bar12">
+                <div id="container2">
+                    <div id="sub_cont">
+                        <div id="get">Get your first meal for free!</div>
+                        <div id="health">Healthy, tasty and hassle-free meals are waiting for you. Start eating well
+                            today. You can cancel or pause anytime. And the first meal is on us!</div>
+                    </div>
+                    <div id="sub_cont1">
+                        <input id="name" type="txt" placeholder="Enter your name">
+                        <input id="mail" type="text" placeholder="me@example.com">
+                    </div>
+                    <div id="sub_cont2">
+                        <select id="page" name="page">
+                            <option value="please choose one option:">please choose one option:</option>
+                            <option value="Friends and family">Friends and family</option>
+                            <option value="Youtube">Youtube</option>
+                            <option value="Podcast">Podcast</option>
+                            <option value="Facebook AD">Facebook AD</option>
+                            <option value="Others">Others</option>
+                        </select>
+                        <button id="now" type="submit">Sign up now</button>
+                    </div>
+                </div>
+                <div id="pic9">
+                    <img id="pic0"
+                        src="https://r2.erweima.ai/imgcompressed/img/compressed_92ce3e268f8521a133c487120f25c5ce.webp">
+                </div>
+            </div>
+            <div id="bar13">
+                <div id="home1">
+                    <img id="img" src="https://omnifood.dev/img/omnifood-logo.png">
+                    <div id="home2">
+                        <img id="img1" src="https://cdn-icons-png.flaticon.com/128/717/717392.png">
+                        <img id="img1" src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png">
+                        <img id="img1" src="https://cdn-icons-png.flaticon.com/128/733/733635.png">
+                    </div>
+                    <div id="home3">Copyright © 2024 by Omnifood, Inc. All rights reserved.</div>
+                </div>
+                <div id="homeA">
+                    <div id="contact">Contact us</div>
+                    <div id="CA">623 Harrison St., 2nd Floor, San Francisco, CA 94107</div>
+                    <div id="number">415-201-6370</div>
+                    <div id="hello">hello@omnifood.com</div>
+                </div>
+                <div id="homeB">
+                    <div id="account">Account</div>
+                    <div id="mas">Create account</div>
+                    <div id="mas">Sign in</div>
+                    <div id="mas">iOS app</div>
+                    <div id="mas">Android app</div>
+                </div>
+                <div id="homeB">
+                    <div id="account">company</div>
+                    <div id="mas">About omnifood</div>
+                    <div id="mas">For Business</div>
+                    <div id="mas">Cooking partners</div>
+                    <div id="mas">Careers</div>
+                </div>
+                <div id="homeB">
+                    <div id="account">Resources</div>
+                    <div id="mas">Recipe directory</div>
+                    <div id="mas">Help center</div>
+                    <div id="mas">privacy $ terms</div>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
